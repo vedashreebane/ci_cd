@@ -1,0 +1,9 @@
+pandas
+joblib
+scikit-learn
+requests
+python-dotenv
+dvc[gs]
+gcsfs
+lightgbm
+pyarrow
