@@ -38,7 +38,7 @@ DATE_COL        = "as_of_date"
 IDENTIFIER_COLS = ["Store ID", "Product ID"]
 
 # ── Paths (all relative to repo root) ────────────────────────────────────────
-INPUT_PATH  = Path("data/input/features.parquet")
+INPUT_PATH  = Path("data/features.parquet")
 OUTPUT_DIR  = Path("data/splits")
 REPORTS_DIR = Path("reports")
 
