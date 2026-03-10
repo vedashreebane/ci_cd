@@ -7,3 +7,5 @@ dvc[gs]
 gcsfs
 lightgbm
 pyarrow
+xgboost>=2.0.0
+prophet>=1.1.5
