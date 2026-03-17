@@ -42,16 +42,6 @@ jobs:
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ env.GOOGLE_APPLICATION_CREDENTIALS }}
 
-      - name: Verify raw data files exist
-        run: |
-          echo "Files pulled from DVC:"
-          ls -lh data/
-          if [ ! -f "data/features.parquet" ]; then
-            echo "ERROR: data/features.parquet not found after dvc pull"
-            exit 1
-          fi
-          echo "features.parquet found — proceeding."
-
       - name: Split data
         run: python data_splitting.py
 

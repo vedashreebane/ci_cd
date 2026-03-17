@@ -72,7 +72,7 @@ DATE_COL        = "as_of_date"
 IDENTIFIER_COLS = ["Store ID", "Product ID"]
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-INPUT_PATH  = Path("data/features.parquet")
+INPUT_PATH = Path("data/features/features.parquet")
 OUTPUT_DIR  = Path("data/splits")
 REPORTS_DIR = Path("reports")
 
