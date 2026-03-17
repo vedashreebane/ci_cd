@@ -2,7 +2,7 @@ name: ML Pipeline
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
       - '**.dvc'
   workflow_dispatch:
@@ -39,6 +39,8 @@ jobs:
 
       - name: Pull data from DVC
         run: dvc pull
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ env.GOOGLE_APPLICATION_CREDENTIALS }}
 
       - name: Verify raw data files exist
         run: |
