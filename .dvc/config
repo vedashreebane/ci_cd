@@ -3,3 +3,4 @@
     remote = storage
 ['remote "storage"']
     url = gs://supply-chain-pipeline/dvc
+    credentialpath = /opt/airflow/gcp-key.json
