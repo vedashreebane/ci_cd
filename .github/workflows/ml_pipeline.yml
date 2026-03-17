@@ -37,6 +37,13 @@ jobs:
         run: |
           mkdir -p data/splits data/models/xgboost data/models/prophet reports
 
+      - name: Debug data folder
+        run: |
+          echo "Contents of data/:"
+          ls -lh data/
+          echo "Contents of data/features/:"
+          ls -lh data/features/
+
       - name: Pull data from DVC
         run: dvc pull
         env:
