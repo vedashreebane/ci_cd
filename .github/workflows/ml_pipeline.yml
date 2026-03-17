@@ -44,6 +44,10 @@ jobs:
           echo "Contents of data/features/:"
           ls -lh data/features/
 
+      - name: Configure DVC credentials
+        run: |
+          dvc remote modify --local storage credentialpath "$GOOGLE_APPLICATION_CREDENTIALS"
+
       - name: Pull data from DVC
         run: dvc pull
         env:
