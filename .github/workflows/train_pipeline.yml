@@ -8,6 +8,7 @@ on:
       - 'requirements.txt'
       - '.github/workflows/**'
       - '**.csv'
+      - '**.dvc'
   pull_request:
     branches: [ main ]
   workflow_dispatch:      # allows manual trigger from GitHub UI
